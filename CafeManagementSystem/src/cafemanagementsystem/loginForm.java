@@ -98,7 +98,7 @@ public class loginForm extends javax.swing.JFrame {
         PreparedStatement pst = con.prepareStatement(sql);
         pst.setString(1, username);
         pst.setString(2, password);
-            ResultSet rs = pst.executeQuery(sql);
+            ResultSet rs = pst.executeQuery();
             
             if(rs.next()){
                 dispose();
